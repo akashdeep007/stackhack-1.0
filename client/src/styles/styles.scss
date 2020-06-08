@@ -1,0 +1,23 @@
+@import './registerForm';
+@import './loginForm';
+@import './adminPage';
+@import './previewForm';
+@import './loader';
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    overflow: auto;
+    background-image: linear-gradient(rgb(179, 179, 255), rgb(197, 122, 212));
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .body{
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,106 @@
+.register-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .register-form{
+        background-color: white;
+        padding: 10px;
+        padding-top: 9%;
+        text-align: left;
+        height: 100vh;
+        form{
+            width: 90%;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            h1{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            div{
+                margin: 5px 0px;
+                label{
+                    display: block;
+                }
+                input{
+                    margin-top: 2px;
+                    margin-bottom: 5px;
+                    padding: 0.5em 0.6em;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    box-shadow: inset 0 1px 3px #ddd;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    display: block;
+                    width: 100%;
+                }
+                select{
+                    width: 100%;
+                    height: 35px;
+                }
+            }
+            button{
+                border: none;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                width: 150px;
+                height: 40px;
+                margin: 10px auto;
+                border-radius: 29px;
+                // background-color: rgb(203, 126, 255);
+                background-image: linear-gradient(45deg, rgb(203, 126, 255), rgb(134, 91, 255));
+                color: white;
+                font-weight: 800;
+                box-shadow: rgb(212, 212, 212) 2px 2px;
+                
+                &:hover{
+                    background-color: blue;
+                }
+                &:active{
+                    box-shadow: black 0px 0px;
+                }
+
+
+            }
+
+        }
+    }
+
+    .event-info{
+        padding: 2em;
+        padding-bottom: 4em;
+        text-align: center;
+        padding-top: 10.5%;
+        p{
+            padding-top: 50px;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .register-page{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        .register-form{
+            width: 100%;
+            form{
+                width: 70%;
+                margin: 30px auto;
+            }
+            form input{
+                display: block;
+            }
+        }
+    
+        .event-info{
+            width: 60%;
+        }
+    }
+}
+
